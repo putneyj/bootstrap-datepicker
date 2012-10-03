@@ -62,6 +62,10 @@
 			background: @grayLighter;
 			cursor: pointer;
 		}
+		&.day.noclick:hover {
+			background: @white;
+			cursor: default;
+		}
 		&.old,
 		&.new {
 			color: @grayLight;
@@ -71,6 +75,54 @@
 			background: none;
 			color: @grayLight;
 			cursor: default;
+		}
+		&.info,
+		&.info:hover,
+		&.info.disabled,
+		&.info.disabled:hover {
+			.buttonBackground(@btnInfoBackground, spin(@btnInfoBackground, 20));
+			color: #fff;
+			text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		}
+		&.success,
+		&.success:hover,
+		&.success.disabled,
+		&.success.disabled:hover {
+			.buttonBackground(@btnSuccessBackground, spin(@btnSuccessBackground, 20));
+			color: #fff;
+			text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		}
+		&.warning,
+		&.warning:hover,
+		&.warning.disabled,
+		&.warning.disabled:hover {
+			.buttonBackground(@btnWarningBackground, spin(@btnWarningBackground, 20));
+			color: #fff;
+			text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		}
+		&.danger,
+		&.danger:hover,
+		&.danger.disabled,
+		&.danger.disabled:hover {
+			.buttonBackground(@btnDangerBackground, spin(@btnDangerBackground, 20));
+			color: #fff;
+			text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		}
+		&.inverse,
+		&.inverse:hover,
+		&.inverse.disabled,
+		&.inverse.disabled:hover {
+			.buttonBackground(@btnInverseBackground, spin(@btnInverseBackground, 20));
+			color: #fff;
+			text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		}
+		&.blackout,
+		&.blackout:hover,
+		&.blackout.disabled,
+		&.blackout.disabled:hover {
+			.buttonBackground(@btnInverseBackground, spin(@btnInverseBackground, 20));
+			color: #fff;
+			text-shadow: 0 -1px 0 rgba(0,0,0,.25);
 		}
 		&.active,
 		&.active:hover,
